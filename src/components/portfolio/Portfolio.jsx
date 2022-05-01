@@ -8,9 +8,9 @@ import IMG5 from "../../assets/6.webp";
 import IMG6 from "../../assets/7.webp";
 import IMG7 from "../../assets/8.webp";
 import IMG8 from "../../assets/9.jpg";
-import IMG9 from "../../assets/10.png";
+// import IMG9 from "../../assets/10.png";
 import IMG10 from "../../assets/11.jpg";
-import IMG11 from "../../assets/12.jpg";
+// import IMG11 from "../../assets/12.jpg";
 
 const data = [
   {
@@ -58,7 +58,7 @@ const data = [
   },
   {
     id: 7,
-    image: IMG9,
+    image: IMG5,
     title: "Hospital Website",
     github: "https://github.com",
     demo: "",
@@ -72,7 +72,7 @@ const data = [
   },
   {
     id: 9,
-    image: IMG11,
+    image: IMG6,
     title: "Beyond Borders",
     github: "https://github.com",
     demo: "",
