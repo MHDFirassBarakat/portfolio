@@ -9,8 +9,10 @@ import InstagramImg from "../../assets/img/instagram.png";
 import Vector1 from "../../assets/img/Vector1.png";
 import Vector2 from "../../assets/img/Vector2.png";
 import Boy from "../../assets/img/boy.png";
-import Thumbup from "../../assets/img/thumbup.png";
-import Crown from "../../assets/img/crown.png";
+// import Thumbup from "../../assets/img/thumbup.png";
+// import Crown from "../../assets/img/crown.png";
+import ReactJsImg from "../../assets/img/reactjs.png";
+import ReduxImg from "../../assets/img/redux.png";
 import glassesImoji from "../../assets/img/glassesimoji.png";
 import { motion } from "framer-motion";
 const Intro = () => {
@@ -76,18 +78,19 @@ const Intro = () => {
           alt="emojy"
         />
         <motion.img
+          id="reactjsImg"
           initial={{ right: "-20%" }}
           whileInView={{ right: "5%" }}
           transition={transition}
-          src={Crown}
+          src={ReactJsImg}
           alt="emojy"
         />
         <motion.img
-          id="thumbup"
+          id="reduxImg"
           initial={{ left: "-20%" }}
           whileInView={{ left: "-12%" }}
           transition={transition}
-          src={Thumbup}
+          src={ReduxImg}
           alt="emojy"
         />
         {/* blur div */}

@@ -72,9 +72,14 @@
   top: -30%;
   left: 12%;
 }
-#thumbup {
+#reactjsImg {
+  left: -5;
+  width: 150px;
+}
+#reduxImg {
   top: 15em;
   left: -5;
+  width: 150px;
 }
 
 /* blur */
