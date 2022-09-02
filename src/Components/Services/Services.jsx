@@ -7,6 +7,7 @@ import Glasses from "../../assets/img/glasses.png";
 import Hummble from "../../assets/img/humble.png";
 import Card from "../Card/Card";
 import { motion } from "framer-motion";
+import Resume from "../../assets/resume.pdf";
 const Services = () => {
   // transition
   const transition = {
@@ -25,7 +26,9 @@ const Services = () => {
           <br />
           occaecat tempor officia.
         </span>
-        <button className="button s-button">Download CV</button>
+        <a href={Resume} download>
+          <button className="button s-button">Download CV</button>
+        </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right side */}
@@ -63,12 +66,14 @@ const Services = () => {
         >
           <Card
             emoji={Hummble}
-            heading={""}
-            detail={
-              "React Js, Redux, WordPress, Django,Machine Learning,Deep Learning"
-            }
+            heading={"Leadership"}
+            detail={"Active listening, Empathy,Creativity, Flexibility"}
           />
         </motion.div>
+        <div
+          className="blur s-blur2"
+          style={{ background: "var(--purple)" }}
+        ></div>
       </div>
     </div>
   );
