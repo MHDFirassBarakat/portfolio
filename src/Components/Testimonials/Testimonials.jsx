@@ -39,7 +39,8 @@ const Testimonials = () => {
     <div className="t-wrapper">
       <div className="t-heading">
         <span>Satisfying Words From</span>
-        <span>Exceptional Clients</span>
+        <br />
+        <span>Exceptional Clients....</span>
         <div
           className="blur t-blur1"
           style={{ background: "var(--purple)" }}
@@ -55,8 +56,10 @@ const Testimonials = () => {
         {clients.map((client, index) => {
           return (
             <SwiperSlide key={index}>
-              <img src={client.img} alt="clientImg" />
-              <span>{client.review}</span>
+              <div className="testimonial">
+                <img src={client.img} alt="clientImg" />
+                <span>{client.review}</span>
+              </div>
             </SwiperSlide>
           );
         })}
