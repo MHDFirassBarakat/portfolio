@@ -1,35 +1,94 @@
-:root {
-  --white: #fff;
-  --yellow: #f5c32c;
-  --orange: #fca61f;
-  --black: #242d49;
-  --gray: #788097;
-  --blueCard: #ddf8fe;
-  --purple: rgb(238 210 255);
-  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-  --orangeCard: rgba(252, 166, 31, 0.45);
-  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+/************ Custom Font ************/
+@font-face {
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Book.ttf");
+  font-weight: 400;
 }
 
-.App {
-  padding: 0.5rem 3.5rem;
-  overflow: hidden;
-  color: var(--black);
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
-.button {
-  border-radius: 34px;
-  border: none;
-  color: var(--white);
-  font-size: 16px;
-  padding: 11px 26px;
-  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: "Centra", sans-serif !important;
 }
-.button:hover {
-  background: var(--white);
-  cursor: pointer;
-  color: var(--orange);
-  border: 1px solid var(--orange);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
+
+p.success {
+  color: green;
+}
+
+p.danger {
+  color: red;
 }
