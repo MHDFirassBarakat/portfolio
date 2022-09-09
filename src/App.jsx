@@ -1,5 +1,7 @@
+//css
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+//components
 import { NavBar } from "./components/NavBar/NavBar";
 import { Banner } from "./components/Banner/Banner";
 import { Skills } from "./components/Skills/Skills";
