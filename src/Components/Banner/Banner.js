@@ -6,7 +6,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 //css
 import "./Banner.css";
-export const Banner = () => {
+const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -107,3 +107,4 @@ export const Banner = () => {
     </section>
   );
 };
+export default Banner;

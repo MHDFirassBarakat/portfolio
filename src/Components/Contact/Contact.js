@@ -5,7 +5,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 //css
 import "./Contact.css";
-export const Contact = () => {
+const Contact = () => {
   const formInitialDetails = {
     firstName: "",
     lastName: "",
@@ -150,3 +150,4 @@ export const Contact = () => {
     </section>
   );
 };
+export default Contact;

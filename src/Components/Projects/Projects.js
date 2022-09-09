@@ -8,7 +8,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 //css
 import "./Projects.css";
-export const Projects = () => {
+const Projects = () => {
   const projects = [
     {
       title: "Business Startup",
@@ -117,7 +117,8 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="backImg" />
     </section>
   );
 };
+export default Projects;
